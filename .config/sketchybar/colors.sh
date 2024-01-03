@@ -32,7 +32,7 @@ export BG2=0x60494d64
 
 # General bar colors
 export BAR_COLOR=$BG0
-export BAR_BORDER_COLOR=$BG2
+export BAR_BORDER_COLOR=$MAGENTA
 export BACKGROUND_1=$BG1
 export BACKGROUND_2=$BG2
 export ICON_COLOR=$WHITE # Color of all icons
