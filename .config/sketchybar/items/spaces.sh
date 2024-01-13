@@ -22,7 +22,7 @@ do
     icon.highlight_color=$RED
     label.color=$GREY
     label.highlight_color=$WHITE
-    label.font="sketchybar-app-font:Regular:16.0"
+    label.font="sketchybar-app-font:Regular:12.0"
     label.y_offset=-1
     background.color=$BACKGROUND_1
     background.border_color=$BACKGROUND_2
@@ -36,7 +36,7 @@ done
 
 space_creator=(
   icon=􀆊
-  icon.font="$FONT:Heavy:16.0"
+  icon.font="$FONT:Heavy:12.0"
   padding_left=10
   padding_right=8
   label.drawing=off

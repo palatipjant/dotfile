@@ -20,9 +20,9 @@ launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist > /
 
 # Setting up the general bar appearance of the bar
 bar=(
-  height=45
+  height=30
   color=$BAR_COLOR
-  border_width=4
+  border_width=0
   corner_radius=12
   border_color=$BAR_BORDER_COLOR
   shadow=off
@@ -44,20 +44,20 @@ defaults=(
   icon.color=$ICON_COLOR
   icon.padding_left=$PADDINGS
   icon.padding_right=$PADDINGS
-  label.font="$FONT:Semibold:13.0"
+  label.font="$FONT:Semibold:10.0"
   label.color=$LABEL_COLOR
   label.padding_left=$PADDINGS
   label.padding_right=$PADDINGS
   padding_right=$PADDINGS
   padding_left=$PADDINGS
-  background.height=26
-  background.corner_radius=9
+  background.height=18
+  background.corner_radius=4
   background.border_width=2
   popup.background.border_width=2
-  popup.background.corner_radius=9
+  popup.background.corner_radius=6
   popup.background.border_color=$POPUP_BORDER_COLOR
   popup.background.color=$POPUP_BACKGROUND_COLOR
-  popup.blur_radius=20
+  popup.blur_radius=10
   popup.background.shadow.drawing=on
   scroll_texts=on
 )
@@ -76,13 +76,13 @@ source "$ITEM_DIR/spotify.sh"
 
 # Right
 source "$ITEM_DIR/calendar.sh"
-source "$ITEM_DIR/brew.sh"
+# source "$ITEM_DIR/brew.sh"
 source "$ITEM_DIR/github.sh"
 source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/volume.sh"
-source "$ITEM_DIR/cpu.sh"
-source "$ITEM_DIR/svim.sh"
+# source "$ITEM_DIR/cpu.sh"
+# source "$ITEM_DIR/svim.sh"
 
 sketchybar --hotload on
 
