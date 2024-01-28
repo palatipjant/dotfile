@@ -32,13 +32,17 @@ export BG2=0x60494d64
 export setbg=0xffF2AFEF
 export setfont=0xff33186B
 
+# My Color Set
+export mybg=0xff050505
+export myfont=0xffFFD1E3
+
 # General bar colors
-export BAR_COLOR=$BG0
+export BAR_COLOR=$BLACK
 export BAR_BORDER_COLOR=$MAGENTA
 export BACKGROUND_1=$BG1
 export BACKGROUND_2=$BG2
-export ICON_COLOR=$WHITE # Color of all icons
-export LABEL_COLOR=$WHITE # Color of all labels
+export ICON_COLOR=$myfont # Color of all icons
+export LABEL_COLOR=$myfont # Color of all labels
 export POPUP_BACKGROUND_COLOR=$BAR_COLOR
 export POPUP_BORDER_COLOR=$WHITE
 export SHADOW_COLOR=$BLACK

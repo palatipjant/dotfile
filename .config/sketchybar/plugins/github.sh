@@ -20,14 +20,14 @@ update() {
   args+=(--remove '/github.notification\.*/')
 
   COUNTER=0
-  COLOR=$BLUE
+  COLOR=$myfont
   args+=(--set github.bell icon.color=$COLOR)
 
   while read -r repo url type title 
   do
     COUNTER=$((COUNTER + 1))
     IMPORTANT="$(echo "$title" | egrep -i "(deprecat|break|broke)")"
-    COLOR=$BLUE
+    COLOR=$myfont
     PADDING=0
 
     if [ "${repo}" = "" ] && [ "${title}" = "" ]; then
